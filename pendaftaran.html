@@ -136,7 +136,7 @@
                     </div>
                     <div class="form-group">
                         <label for="tempat">Tempat Tanggal Lahir</label>
-                        <input type="date" id="b" name="tanggal"><br>
+                        <input type="date" id="tanggal" name="tanggal" min="1987-01-01" max="1993-01-01" pattern="\d{2}-\d{2}-\d{4}">
                     </div>
                 </form>
             </fieldset>
@@ -148,8 +148,8 @@
                         <input type="text" id="nama" name="nama">
                     </div>
                     <div class="form-group">
-                        <label for="nama">Tingkat Kepentingan Pertemuan</label>
-                        <input type="range" id="vol" name="vol" min="-50" max="50"><br>
+                        <label for="nama">Tingkat Kepentingan Pertemuan (0-10)</label>
+                        <input type="range" id="vol" name="vol" min="0" max="10"><br>
                     </div>
                     <div class="form-group">
                         <label for="nama">Tanggal</label>
@@ -157,24 +157,17 @@
                     </div>
                     <div class="form-group">
                         <label for="tempat">Waktu</label>
-                        <input type="time" id="appt" name="appt"><br>
+                        <input type="time" id="appt" name="appt" ><br>
                     </div>
                 </form>
             </fieldset>
                 <button type="submit">submit</button>
-            
-                <script>
-                    function resetForm() {
-                        document.querySelector('form').reset();
-                        alert("Anda membatalkan pendaftaran.");
-                    }
-                </script>
             <p> <!-- Tulis kesimpulan disini--> </p>
         </article>
     </section>
 
     <footer>
-        <p>Footer <i>2024@Afiq Galuh Setya Ramadhani</i></p>
+        <p>Footer <i>2024@Afiq Galuh Setya Ramadhani 234311004</i></p>
     </footer>
 </body>
 </html>
